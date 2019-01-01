@@ -194,7 +194,7 @@ $(eval $(call symlink_system_library,libcolamd,SUITESPARSE))
 $(eval $(call symlink_system_library,libumfpack,SUITESPARSE))
 $(eval $(call symlink_system_library,libspqr,SUITESPARSE))
 $(eval $(call symlink_system_library,libsuitesparseconfig,SUITESPARSE))
-ifneq ($(DISABLE_LIBUNWIND),0)
+ifneq ($(DISABLE_LIBUNWIND),1)
 $(eval $(call symlink_system_library,libunwind,LIBUNWIND))
 endif
 endif # WINNT
